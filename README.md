@@ -11,7 +11,7 @@ Publícala en GitHub Pages para comenzar con tu portafolio de web developer.
 
 - Primero: Definir las formulas
 - Segundo: Implementar las formulas en Javascript
-- Tercero: Crear funciones
+- Tercero: Convertir las formulas en funciones
 - Cuarto: Integrar Javascript con HTML
 
 ## Taller #2: porcentaajes y descuentos

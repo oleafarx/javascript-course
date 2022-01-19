@@ -138,7 +138,7 @@ function calcAlturaTriangulo() {
         alert("La altura del triángulo es: " + altura);
     }
     else{
-        alert("Los lados A y B no son iguales");
+        alert("Los lados A y B, no son iguales");
     }
 }
 
