@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,46 +9,111 @@
 </head>
 <body>
     <header>
+        <img src="https://www.svgrepo.com/show/189103/geometry.svg" alt="logo">
         <h1>Figuras Geométricas</h1>
     </header>
 
     <main>
         <section>
-            <h2>Cuadrado</h2>
+            <h2 class="title_section">Cuadrado</h2>
+            <img src="https://www.svgrepo.com/show/36250/square.svg" alt="Cuadrado" id="cuadrado">
             <form>
-                <div>
-                    <label for="inputCuadrado">Medida Lado: </label>
-                    <input id="inputCuadrado" type="number">
-                </div>
+                <table>
+                    <tr class="input_form">
+                        <td><label for="inputCuadrado">Medida Lado: </label></td>
+                        <td><input id="inputCuadrado" type="number"> cm</td>
+                    </tr>
+                </table>
 
-                <div>
+                <div class="button_form">
+                    <!--Las funciones están entre las líneas 92 y 106 de figuras.js-->
                     <button type="button" onclick="calcPeriCuadrado()">Perímetro</button>
                     <button type="button" onclick="calcAreaCuadrado()">Área</button>
                 </div>
             </form>
         </section>
-    
+        
         <section>
-            <h2>Isóceles</h2>
+            <h2 class="title_section">Triángulo</h2>
+            <img src="https://www.svgrepo.com/show/87815/triangle.svg" alt="triangulo">
             <form>
-                <div>
-                    <label for="lado1">Lado 1</label>
-                    <input type="number" id="lado1">
-                </div>
+                <table>
+                    <tr class="input_form">
+                        <td><label for="lado1">Lado 1</label></td>
+                        <td><input type="number" id="lado1T"> cm</td>
+                    </tr>
+ 
+                    <tr class="input_form">
+                     <td><label for="lado2">Lado 2</label></td>
+                     <td><input type="number" id="lado2T"> cm</td>
+                    </tr>
+ 
+                    <tr class="input_form">
+                     <td><label for="base">Base</label></td>
+                     <td><input type="number" id="baseT"> cm</td>
+                    </tr>
 
-                <div>
-                    <label for="lado2">Lado 2</label>
-                    <input type="number" id="lado2">
-                </div>
+                    <tr class="input_form">
+                        <td><label for="altura">Altura</label></td>
+                        <td><input type="number" id="alturaT"> cm</td>
+                       </tr>
+                 </table>
 
-                <div>
-                    <label for="base">Base</label>
-                    <input type="number" id="base">
+                 <div class="button_form">
+                    <!--Las funciones están entre las líneas 146 y 161 de figuras.js-->
+                    <button type="button" onclick="calcPeriTriangulo()">Perímetro</button>
+                    <button type="button" onclick="calcAreaTriangulo()">Área</button>
                 </div>
-                
-                <button type="button" onclick="calcAlturaTriangulo()">Calcular Altura</button>
             </form>
         </section>
+
+        <section>
+            <h2 class="title_section">Círculo</h2>
+            <img src="https://www.svgrepo.com/show/62568/circle.svg" alt="Circulo">
+            <form>
+                <table>
+                    <tr class="input_form">
+                        <td><label for="radio">Radio: </label></td>
+                        <td><input id="radio" type="number"> cm</td>
+                    </tr>
+                </table>
+
+                <div class="button_form">
+                    <!--Las funciones están entre las líneas 164 y 176 de figuras.js-->
+                    <button type="button" onclick="calcPeriCirculo()">Perímetro</button>
+                    <button type="button" onclick="calcAreaCirculo()">Área</button>
+                </div>
+            </form>
+        </section>
+    
+        <section>
+            <h2 class="title_section">Isóceles</h2>
+            <img src="https://www.svgrepo.com/show/239299/triangle.svg" alt="triangulo" id="triangulo">
+            <form>
+                <table>
+                   <tr class="input_form">
+                       <td><label for="lado1">Lado 1</label></td>
+                       <td><input type="number" id="lado1"> cm</td>
+                   </tr>
+
+                   <tr class="input_form">
+                    <td><label for="lado2">Lado 2</label></td>
+                    <td><input type="number" id="lado2"> cm</td>
+                   </tr>
+
+                   <tr class="input_form">
+                    <td><label for="base">Base</label></td>
+                    <td><input type="number" id="base"> cm</td>
+                   </tr>
+                </table>
+
+                <div class="button_form">
+                    <!--Las funciones están entre las líneas 120 y 143 de figuras.js-->
+                    <button type="button" onclick="calcAlturaTriangulo()">Calcular Altura</button>
+                </div>
+            </form>
+        </section>
+        
     </main>
 
     <script src="figuras.js"></script>

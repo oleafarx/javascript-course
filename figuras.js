@@ -93,16 +93,16 @@ function calcPeriCuadrado() {
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
 
-    const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    const perimetro = perimetroCuadrado(value); //Declarada en línea 64
+    alert("El perimetro del cuarado es " + perimetro);
 }
 
 function calcAreaCuadrado() {
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
 
-    const area = areaCuadrado(value);
-    alert(area);
+    const area = areaCuadrado(value);  //Declarada en línea 68
+    alert("El área del cuadrado es " + area);
 }
 
 //Triangulo Isóceles
@@ -131,7 +131,7 @@ function calcAlturaTriangulo() {
     let Lado2 = Number(document.getElementById("lado2").value);
     let Base = Number(document.getElementById("base").value);
 
-    const isoceles = validarIsoceles(Lado1, Lado2);
+    const isoceles = validarIsoceles(Lado1, Lado2); //Declarada en línea 120
 
     if(isoceles == true){
         let altura = Math.sqrt( (Lado1 ** 2) - ( (Base ** 2) / (4) ) );
@@ -142,3 +142,35 @@ function calcAlturaTriangulo() {
     }
 }
 
+//Triángulo
+function calcPeriTriangulo(){
+    let Lado1 = Number(document.getElementById("lado1T").value);
+    let Lado2 = Number(document.getElementById("lado2T").value);
+    let Base = Number(document.getElementById("baseT").value);
+
+    const perimetro = perimetroTriangulo(Lado1, Lado2, Base); //Declarada en la línea 73
+    alert("El perimetro del triángulo es " + perimetro);
+}
+
+function calcAreaTriangulo() {
+    let Base = Number(document.getElementById("baseT").value);
+    let Altura = Number(document.getElementById("alturaT").value);
+
+    const area = areaTriangulo(Base, Altura);
+    alert("El área del triángulo es " + area);
+}
+
+//Circulo
+function calcPeriCirculo() {
+    let radio = Number(document.getElementById("radio").value);
+
+    const perimetro = perimetroCirculo(radio); //Declarada en línea 86
+    alert("El perimetro del circulo es " + perimetro);
+}
+
+function calcAreaCirculo() {
+    let radio = Number(document.getElementById("radio").value);
+
+    const area = areaCirculo(radio); //Declarada en línea 88
+    alert("El área del círculo es " + area);
+}

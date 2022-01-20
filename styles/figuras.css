@@ -5,6 +5,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    /*linear gradient generado en CSS GRADIENT GENERATOR*/
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(88,77,34,0.7) 60%), url(https://images.pexels.com/photos/7828076/pexels-photo-7828076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size:contain;
 }
 
 header{
@@ -14,8 +17,12 @@ header{
     background: #F4D03F;
 }
 
+header img {
+    width: 2.5vw;
+    margin: 0 1vw;
+}
+
 header h1 {
-    margin-left: 2vh;
     font-size: 1.5rem;
 }
 
@@ -24,8 +31,68 @@ main {
     justify-content: space-around;
     align-items: center;
     height: 92vh;
+    flex-wrap: wrap;
 }
 
 section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 35vw;
+    border-radius: 5%;
+    height: 40vh;
+    background-color: #F4D03F;
+    /*Creado con BOX SHADOW GENERATOR*/
+    -webkit-box-shadow: -1px 5px 15px 5px rgba(0,0,0,0.56); 
+    box-shadow: -1px 5px 15px 5px rgba(0,0,0,0.56);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+section img{
+    width: 10%;
+    margin: 1em 0;
+}
+
+.button_form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1em;
+}
+
+.button_form button{
+    padding: 0.5em 1em;
+    margin: 0 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    section{
+        width: 80vw;
+        height: auto;
+        margin: 2em;
+        padding: 1em;
+    }
+
+    section img{
+        width: 20%;
+    }
+
+    header img{
+        width: 5vw;
+    }
+
+    header{
+        justify-content: center;
+    }
 }
