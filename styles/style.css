@@ -14,16 +14,36 @@ header{
     height: 8vh;
     display: flex;
     align-items: center;
-    background: #F4D03F;
+    justify-content: space-between;
+    background: #f0c621;
+    padding:0em 1em;
 }
 
-header img {
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
     width: 2.5vw;
     margin: 0 1vw;
 }
 
-header h1 {
+.header h1 {
     font-size: 1.5rem;
+}
+
+#menu ul{
+    list-style: none;
+    display: flex;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0em 1.5em;
+    font-size: 16px;
 }
 
 main {
@@ -77,6 +97,17 @@ section img{
 }
 
 @media (max-width: 800px) {
+    header{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .header img {
+        width: 5vw;
+        margin: 0 1vw;
+    }
+
     section{
         width: 80vw;
         height: auto;
@@ -95,4 +126,8 @@ section img{
     header{
         justify-content: center;
     }
+}
+
+#logo {
+    width: 20%;
 }
